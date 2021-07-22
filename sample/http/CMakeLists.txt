@@ -35,7 +35,7 @@ set(SOURCES
 
 Python3_add_library(http_py MODULE ${SOURCES})
 
-target_link_libraries(http_py PUBLIC
+target_link_libraries(http_py PRIVATE
     Qt::Core Qt::Gui Qt::Network Qt::Widgets
     pybind11::lto pybind11::embed pybind11::module
 )
