@@ -112,13 +112,13 @@ HttpWindow::HttpWindow(QWidget *parent)
     connect(urlLineEdit, &QLineEdit::textChanged,
             this, &HttpWindow::enableDownloadButton);
     formLayout->addRow(tr("&URL:"), urlLineEdit);
-    QString downloadDirectory = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
+    QString downloadDirectory = QDir::currentPath(); //QStandardPaths::writableLocation(QStandardPaths::TempLocation);
     if (downloadDirectory.isEmpty() || !QFileInfo(downloadDirectory).isDir())
         downloadDirectory = QDir::currentPath();
     downloadDirectoryLineEdit->setText(QDir::toNativeSeparators(downloadDirectory));
     formLayout->addRow(tr("&Download directory:"), downloadDirectoryLineEdit);
     formLayout->addRow(tr("Default &file:"), defaultFileLineEdit);
-    launchCheckBox->setChecked(true);
+    launchCheckBox->setChecked(false);
     formLayout->addRow(launchCheckBox);
 
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
