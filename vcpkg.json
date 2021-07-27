@@ -2,15 +2,15 @@
     "name": "gsw",
     "version": "1.0.0",
     "dependencies": [
-	"python3",
-	"boost",
-	"qt5",
-	"grpc",
-	"openblas",
-	"fftw3",
-        "rapidjson",
-	"libpq",
-	"hdf5",
-	"pybind11"
+		"python3",
+		"boost",
+		"qt5",
+		"grpc",
+		"openblas",
+		"fftw3",
+		"rapidjson",
+		"libpq",
+		"hdf5",
+		"pybind11"
     ]
 }
