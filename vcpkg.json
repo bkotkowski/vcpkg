@@ -5,12 +5,13 @@
 		"python3",
 		"boost",
 		"qt5",
+		"qt5-activeqt",
 		"grpc",
-		"openblas",
 		"fftw3",
 		"rapidjson",
 		"libpq",
 		"hdf5",
-		"pybind11"
+		"pybind11",
+		"eigen3"
     ]
 }
