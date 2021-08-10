@@ -5,7 +5,10 @@
 		"python3",
 		"boost",
 		"qt5",
-		"qt5-activeqt",
+		{
+			"name": "qt5-activeqt",
+			"platform": "windows"
+		},
 		"grpc",
 		"fftw3",
 		"rapidjson",
