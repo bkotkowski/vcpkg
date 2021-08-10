@@ -60,6 +60,7 @@ vcpkg_cmake_configure(
         -DHDF5_INSTALL_DATA_DIR=share/hdf5/data
         -DHDF5_INSTALL_CMAKE_DIR=share
         -DHDF_PACKAGE_NAMESPACE:STRING=hdf5::
+		-DHDF5_EXTERNAL_LIB_PREFIX=gs_
 )
 
 vcpkg_cmake_install()
