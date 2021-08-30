@@ -22,7 +22,7 @@ endif()
 
 set(INSTALL_EXAMPLEDIR "${INSTALL_EXAMPLESDIR}/network/http")
 
-find_package(Python3 COMPONENTS Development REQUIRED)
+find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
 find_package(pybind11 CONFIG REQUIRED)
 find_package(Qt5 COMPONENTS Core Gui Network Widgets CONFIG REQUIRED)
 
@@ -33,10 +33,14 @@ set(SOURCES
     http_py11.cpp
 )
 
-Python3_add_library(http_py MODULE ${SOURCES})
+#Python3_add_library(http_py MODULE ${SOURCES})
 
-target_link_libraries(http_py PRIVATE
-    Qt::Core Qt::Gui Qt::Network Qt::Widgets
-    pybind11::lto pybind11::embed pybind11::module
-)
+#target_link_libraries(http_py PRIVATE
+#    Qt::Core Qt::Gui Qt::Network Qt::Widgets
+#    pybind11::lto pybind11::embed pybind11::module
+#)
+
+pybind11_add_module(http_py MODULE ${SOURCES})
+target_link_libraries(http_py PRIVATE Qt::Core Qt::Gui Qt::Network Qt::Widgets)
+
 

@@ -14,7 +14,12 @@
 		"rapidjson",
 		"libpq",
 		"hdf5",
-		"pybind11",
-		"eigen3"
+		"eigen3",
+		"glm",
+		"glfw3",
+		"cereal",
+		"shapelib",
+		"zlib",
+		"pybind11"
     ]
 }
