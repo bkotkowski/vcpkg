@@ -4,6 +4,7 @@
     "dependencies": [
 		"python3",
 		"boost",
+		"boost-uuid",
 		"qt5",
 		{
 			"name": "qt5-activeqt",
