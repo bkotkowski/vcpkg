@@ -6,6 +6,12 @@
 		"boost",
 		"boost-uuid",
 		"qt5",
+		"qt5-websockets",
+		"qt5-webengine",
+		{
+			"name": "qt5-winextras",
+			"platform": "windows"
+		},
 		{
 			"name": "qt5-activeqt",
 			"platform": "windows"
