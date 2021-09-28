@@ -5,9 +5,10 @@
 		"python3",
 		"boost",
 		"boost-uuid",
+		"boost-asio",
+		"opus",
 		"qt5",
 		"qt5-websockets",
-		"qt5-webengine",
 		{
 			"name": "qt5-winextras",
 			"platform": "windows"
@@ -31,6 +32,12 @@
 		"cereal",
 		"shapelib",
 		"zlib",
-		"pybind11"
+		"pybind11",
+		"libxml2",
+		"freetype",
+		"libpng",
+		"tiff",
+		"libjpeg-turbo",
+		"thrift"
     ]
 }
