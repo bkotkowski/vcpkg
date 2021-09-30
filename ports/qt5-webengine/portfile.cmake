@@ -52,7 +52,7 @@ if("proprietary-codecs" IN_LIST FEATURES)
     list(APPEND OPTIONS "-webengine-proprietary-codecs")
 endif()
 if(NOT VCPKG_TARGET_IS_WINDOWS)
-    list(APPEND OPTIONS "-webengine-system-libwebp" "-webengine-system-ffmpeg" "-webengine-system-icu")
+    list(APPEND OPTIONS "-feature-webengine-system-libwebp" "-feature-webengine-system-ffmpeg" "-feature-webengine-system-icu" "-feature-webengine-system-opus")
 endif()
 
 qt_submodule_installation(PATCHES ${PATCHES} BUILD_OPTIONS ${OPTIONS})

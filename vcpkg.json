@@ -1,13 +1,16 @@
 {
     "name": "gsw",
     "version": "1.0.0",
+	"builtin-baseline": "80336479891540a57c7e96a9300c34e62ebc7951",
     "dependencies": [
 		"python3",
 		"boost",
 		"boost-uuid",
+		"boost-asio",
+		"ffmpeg",
+		"opus",
 		"qt5",
 		"qt5-websockets",
-		"qt5-webengine",
 		{
 			"name": "qt5-winextras",
 			"platform": "windows"
@@ -20,8 +23,12 @@
 			"name": "qt5-x11extras",
 			"platform": "!windows"
 		},
+		"qt5-webengine",
 		"grpc",
-		"fftw3",
+		{
+			"name": "fftw3",
+			"features": [ "threads" ]
+		},
 		"rapidjson",
 		"libpq",
 		"hdf5",
@@ -31,6 +38,12 @@
 		"cereal",
 		"shapelib",
 		"zlib",
-		"pybind11"
+		"pybind11",
+		"libxml2",
+		"freetype",
+		"libpng",
+		"tiff",
+		"libjpeg-turbo",
+		"thrift"
     ]
 }
