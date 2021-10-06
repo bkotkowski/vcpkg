@@ -1,0 +1,13 @@
+--- a/src/3rdparty/chromium/third_party/libxml/src/encoding.c
++++ b/src/3rdparty/chromium/third_party/libxml/src/encoding.c
+@@ -48,6 +48,10 @@
+ #include "buf.h"
+ #include "enc.h"
+ 
++#ifndef TRUE
++#define TRUE 1
++#endif
++
+ static xmlCharEncodingHandlerPtr xmlUTF16LEHandler = NULL;
+ static xmlCharEncodingHandlerPtr xmlUTF16BEHandler = NULL;
+ 

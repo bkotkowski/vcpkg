@@ -1,0 +1,13 @@
+--- a/src/3rdparty/chromium/base/i18n/string_compare.cc
++++ b/src/3rdparty/chromium/base/i18n/string_compare.cc
+@@ -18,8 +18,8 @@
+                                              StringPiece16 rhs) {
+   UErrorCode error = U_ZERO_ERROR;
+   UCollationResult result = collator.compare(
+-      icu::UnicodeString(FALSE, lhs.data(), static_cast<int>(lhs.length())),
+-      icu::UnicodeString(FALSE, rhs.data(), static_cast<int>(rhs.length())),
++      icu::UnicodeString(false, lhs.data(), static_cast<int>(lhs.length())),
++      icu::UnicodeString(false, rhs.data(), static_cast<int>(rhs.length())),
+       error);
+   DCHECK(U_SUCCESS(error));
+   return result;
