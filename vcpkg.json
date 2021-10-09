@@ -1,10 +1,13 @@
 {
     "name": "gsw",
     "version": "1.0.0",
-	"builtin-baseline": "bc6eef9c3c6c4cdbd19e0594e6402a7817596f28",
+	"builtin-baseline": "4de3264b55e35226049a3a143eafa3c3e2bbaf6f",
 	"dependencies": [
 		"python3",
-		"boost",
+		{
+			"name": "boost",
+			"features": []
+		},
 		{
 			"name": "fftw3",
 			"features": [ "threads" ]
@@ -28,7 +31,7 @@
 		"grpc"
     ],
 	"overrides": [
-		{ "name": "boost", "version-string": "1.76.0" },
-		{ "name": "python3", "version-string": "3.9.7" }
+		{ "name": "boost", "version": "1.76.0" },
+		{ "name": "python3", "version": "3.9.7" }
     ]
 }
