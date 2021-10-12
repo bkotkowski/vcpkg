@@ -28,7 +28,8 @@
 		"tiff",
 		"libjpeg-turbo",
 		"thrift",
-		"grpc"
+		"grpc",
+		"harfbuzz"
     ],
 	"overrides": [
 		{ "name": "boost", "version": "1.76.0" },
