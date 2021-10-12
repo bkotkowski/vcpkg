@@ -34,6 +34,6 @@
 	"overrides": [
 		{ "name": "boost", "version": "1.76.0" },
 		{ "name": "python3", "version": "3.9.7" },
-		{ "name": "hdf5", "version": "1.12.0#5" }
+		{ "name": "hdf5", "version-string": "1.12.0#5" }
     ]
 }
