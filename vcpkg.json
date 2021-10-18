@@ -29,7 +29,11 @@
 		"libjpeg-turbo",
 		"thrift",
 		"grpc",
-		"harfbuzz"
+		"harfbuzz",
+		"wxwidgets",
+		"libgeotiff",
+		"opencv",
+		"armadillo"
     ],
 	"overrides": [
 		{ "name": "boost", "version": "1.76.0" },
