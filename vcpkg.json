@@ -28,12 +28,11 @@
 		"tiff",
 		"libjpeg-turbo",
 		"thrift",
-		"grpc",
-		"harfbuzz",
-		"wxwidgets",
-		"libgeotiff",
-		"opencv",
-		"armadillo"
+		{
+			"name": "grpc",
+			"features": [ "codegen" ]
+		},
+		"harfbuzz"
     ],
 	"overrides": [
 		{ "name": "boost", "version": "1.76.0" },
