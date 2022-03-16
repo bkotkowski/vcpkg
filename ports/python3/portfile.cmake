@@ -114,6 +114,8 @@ if(VCPKG_TARGET_IS_WINDOWS OR VCPKG_TARGET_IS_UWP)
     if(NOT DEFINED VCPKG_BUILD_TYPE OR VCPKG_BUILD_TYPE STREQUAL "debug")
         vcpkg_add_to_path("${CURRENT_INSTALLED_DIR}/debug/bin")
     endif()
+	
+	list(APPEND OPTIONS "/UseEnv")
 
     vcpkg_install_msbuild(
         SOURCE_PATH "${SOURCE_PATH}"
