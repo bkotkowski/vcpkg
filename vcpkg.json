@@ -38,7 +38,8 @@
 			"name": "ncurses",
 			"platform": "!windows"
 		},
-		"libssh2"
+		"libssh2",
+		"netcdf-c"
     ],
 	"overrides": [
 		{ "name": "boost", "version": "1.76.0" },
