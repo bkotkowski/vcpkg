@@ -34,7 +34,10 @@
 		},
 		"harfbuzz",
 		"readline",
-		"ncurses",
+		{
+			"name": "ncurses",
+			"platform": "!windows"
+		},
 		"libssh2"
     ],
 	"overrides": [
