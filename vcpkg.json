@@ -39,7 +39,8 @@
 			"platform": "!windows"
 		},
 		"libssh2",
-		"netcdf-c"
+		"netcdf-c",
+		"netcdf-cxx4"
     ],
 	"overrides": [
 		{ "name": "boost", "version": "1.76.0" },
