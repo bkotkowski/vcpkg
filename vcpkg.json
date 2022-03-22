@@ -40,7 +40,9 @@
 		},
 		"libssh2",
 		"netcdf-c",
-		"netcdf-cxx4"
+		"netcdf-cxx4",
+		"gdal",
+		"pcre"
     ],
 	"overrides": [
 		{ "name": "boost", "version": "1.76.0" },
