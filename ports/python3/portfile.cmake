@@ -115,7 +115,8 @@ if(VCPKG_TARGET_IS_WINDOWS OR VCPKG_TARGET_IS_UWP)
         vcpkg_add_to_path("${CURRENT_INSTALLED_DIR}/debug/bin")
     endif()
 	
-	list(APPEND OPTIONS "/UseEnv")
+	message(STATUS "Copying ${CMAKE_CURRENT_LIST_DIR}/externals to ${SOURCE_PATH})
+	file(COPY "${CMAKE_CURRENT_LIST_DIR}/externals" DESTINATION "${SOURCE_PATH}")
 
     vcpkg_install_msbuild(
         SOURCE_PATH "${SOURCE_PATH}"

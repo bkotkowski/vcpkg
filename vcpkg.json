@@ -13,7 +13,10 @@
 			"features": [ "threads" ]
 		},
 		"rapidjson",
-		"libpq",
+		{
+			"name": "libpq",
+			"features": [ "zlib", "openssl", "client" ]
+		},
 		"hdf5",
 		"eigen3",
 		"glm",
@@ -39,6 +42,7 @@
 			"platform": "!windows"
 		},
 		"libssh2",
+		"curl",
 		"netcdf-c",
 		"netcdf-cxx4",
 		"pcre2"
