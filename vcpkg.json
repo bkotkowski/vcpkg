@@ -1,17 +1,14 @@
 {
     "name": "gsw",
     "version": "1.0.0",
-	"builtin-baseline": "6c2859a19707a25788a48f657798cac3c134ae3b",
+	"builtin-baseline": "4de3264b55e35226049a3a143eafa3c3e2bbaf6f",
 	"dependencies": [
 		"python3",
-		{
-			"name": "boost",
-			"features": []
-		},
 		{
 			"name": "fftw3",
 			"features": [ "threads" ]
 		},
+		"boost",
 		"rapidjson",
 		{
 			"name": "libpq",
