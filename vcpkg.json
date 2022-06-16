@@ -14,7 +14,10 @@
 			"name": "libpq",
 			"features": [ "zlib", "openssl", "client" ]
 		},
-		"hdf5",
+		{
+			"name": "hdf5",
+			"features": [ "szip", "zlib", "threadsafe" ]
+		},
 		"eigen3",
 		"glm",
 		"glfw3",
