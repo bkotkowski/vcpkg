@@ -70,7 +70,6 @@ vcpkg_cmake_configure(
         -DHDF5_MSVC_NAMING_CONVENTION=OFF
         -DSZIP_USE_EXTERNAL=ON
         -DALLOW_UNSUPPORTED=${ALLOW_UNSUPPORTED}
-		-DHDF5_EXTERNAL_LIB_PREFIX=gs_
     OPTIONS_RELEASE
         -DCMAKE_DEBUG_POSTFIX= # For lib name in pkgconfig files
 )
