@@ -1,0 +1,57 @@
+{
+    "name": "gsw",
+    "version": "1.0.0",
+	"builtin-baseline": "4de3264b55e35226049a3a143eafa3c3e2bbaf6f",
+	"dependencies": [
+		"python3",
+		{
+			"name": "fftw3",
+			"features": [ "threads" ]
+		},
+		"boost",
+		"rapidjson",
+		{
+			"name": "libpq",
+			"features": [ "zlib", "openssl", "client" ]
+		},
+		{
+			"name": "hdf5",
+			"features": [ "szip", "zlib", "threadsafe" ]
+		},
+		"eigen3",
+		"glm",
+		"glfw3",
+		"cereal",
+		"shapelib",
+		"zlib",
+		"pybind11",
+		"libxml2",
+		"freetype",
+		"libpng",
+		"tiff",
+		"libjpeg-turbo",
+		"thrift",
+		{
+			"name": "grpc",
+			"features": [ "codegen" ]
+		},
+		"harfbuzz",
+		"readline",
+		{
+			"name": "ncurses",
+			"platform": "!windows"
+		},
+		"libssh2",
+		"curl",
+		"netcdf-c",
+		"netcdf-cxx4",
+		"pcre2",
+		"ceres",
+		"mongo-cxx-driver"
+    ],
+	"overrides": [
+		{ "name": "boost", "version": "1.76.0" },
+		{ "name": "python3", "version-string": "3.9.7#3" },
+		{ "name": "hdf5", "version-string": "1.12.2#2" }
+    ]
+}
