@@ -13,7 +13,7 @@
 		{
 			"name": "libpq",
 			"features": [ "zlib", "openssl", "client" ]
-		},
+        },
 		{
 			"name": "hdf5",
 			"features": [ "szip", "zlib", "threadsafe" ]
@@ -52,6 +52,8 @@
 	"overrides": [
 		{ "name": "boost", "version": "1.76.0" },
 		{ "name": "python3", "version-string": "3.9.7#3" },
-		{ "name": "hdf5", "version-string": "1.12.2#2" }
+		{ "name": "hdf5", "version-string": "1.12.2#2" },
+		{ "name": "pcre2", "version-string": "10.40" },
+		{ "name": "libpq", "version-string": "12.2#18" }
     ]
 }
