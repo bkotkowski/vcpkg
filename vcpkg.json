@@ -43,12 +43,18 @@
 		"netcdf-cxx4",
 		"pcre2",
 		"ceres",
+		"libbson",
+		"mongo-c-driver",
 		"mongo-cxx-driver"
     ],
 	"overrides": [
 		{ "name": "boost", "version": "1.76.0" },
 		{ "name": "python3", "version-string": "3.9.7#3" },
 		{ "name": "hdf5", "version-string": "1.12.2#2" },
-		{ "name": "pcre2", "version-string": "10.40" }
+		{ "name": "pcre2", "version-string": "10.40" },
+		{ "name": "libbson", "version-string": "1.17.6#1" },
+		{ "name": "mongo-c-driver", "version-string": "1.17.6#2" },
+		{ "name": "mongo-cxx-driver", "version-string": "3.6.5#3" }
+		
     ]
 }
