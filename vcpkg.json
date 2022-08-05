@@ -41,11 +41,11 @@
 		"curl",
 		"netcdf-c",
 		"netcdf-cxx4",
-		"pcre2",
 		"ceres",
 		"libbson",
 		"mongo-c-driver",
-		"mongo-cxx-driver"
+		"mongo-cxx-driver",
+		"gtest"
     ],
 	"overrides": [
 		{ "name": "boost", "version": "1.76.0" },
